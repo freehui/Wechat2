@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#303435"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/register_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/return_selector"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ac1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:background="#181d1f" />
+        
+        <EditText
+            android:id="@+id/search_value"
+            android:textColor="#ffffff"
+            android:textColorHint="#9A9A9A"
+            android:layout_centerInParent="true"
+            android:imeOptions="actionSearch"
+            style="@style/register_login_edittext"
+            android:layout_width="200dp"
+            android:layout_marginLeft="10dp"
+            android:hint="搜索"
+            android:numeric="integer"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

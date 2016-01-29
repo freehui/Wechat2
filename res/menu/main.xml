@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:actionViewClass="Button"
+        android:icon="@drawable/actionbar_search_icon"
+        android:showAsAction="ifRoom|withText"
+        android:title="搜索"/>
+    <item
+        android:icon="@drawable/actionbar_add_icon"
+        android:showAsAction="ifRoom|withText"
+        android:title="DEL4">
+        <menu>
+            <item
+                
+                
+                android:id="@+id/addfriend"
+                android:icon="@drawable/contact_list_normal"
+                android:title="添加朋友"/>
+            <item
+                android:icon="@drawable/contact_list_normal"
+                android:title="帮助与反馈"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#303435"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/register_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/return_selector"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ac1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:background="#181d1f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/register_back"
+            android:text="使用手机号登录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/phonenumber"
+        style="@style/register_login_lineralayout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_login_lineralayout_default" >
+
+        <TextView
+            style="@style/register_login_textview"
+            android:layout_marginLeft="20dp"
+            android:text="+86" />
+
+        <EditText
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:id="@+id/phonenumber_value"
+            style="@style/register_login_edittext"
+            android:layout_marginLeft="50dp"
+            android:hint="你的手机号码"
+            android:numeric="integer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password"
+        style="@style/register_login_lineralayout"
+        android:background="@drawable/register_login_lineralayout_default"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/register_login_textview"
+            android:layout_marginLeft="10dp"
+            android:text="密码" />
+ 
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/password_value"
+            style="@style/register_login_edittext"
+            android:layout_marginLeft="54dp"
+            android:hint="填写密码"
+            android:password="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/register_login_button"
+        android:text="登录" />
+
+</LinearLayout>

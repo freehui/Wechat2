@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#303435"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/register_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/return_selector"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ac1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:background="#181d1f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/register_back"
+            android:text="微信"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    	<View 
+    	    android:layout_width="0dp"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="1"
+    	    />
+    	    
+    	<Button
+    	    android:id="@+id/send_addfriend_request"
+    	    android:layout_marginRight="10dp"
+    	    android:background="@drawable/send_button_selector"
+    	    android:textColor="#ffffff"
+    	    android:textSize="14sp"
+    	    android:layout_width="50dp"
+    	    android:layout_height="32dp"
+    	    android:text="发送"
+    	    android:width="50dp" />
+
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你需要发送验证申请，等对方通过"
+        android:textColor="#aaaaaa"
+        android:textSize="13sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+    
+    <LinearLayout
+        android:id="@+id/register_phonenumber"
+        style="@style/register_login_lineralayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_login_lineralayout_press" >
+
+        <EditText
+            android:text="我是"
+            android:id="@+id/vmessage"
+            style="@style/register_login_edittext"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true" />
+    </LinearLayout>    
+</LinearLayout>

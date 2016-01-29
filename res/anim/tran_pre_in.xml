@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+		本文件描述了当一个 activity 从左滑入屏幕时，其位置信息。见 tran_out.xml 就知道本文件的意思了
+ -->
+
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fromXDelta="-100%p"
+    android:fromYDelta="0"
+    android:toXDelta="0"
+    android:toYDelta="0" >
+
+</translate>

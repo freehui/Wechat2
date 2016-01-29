@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+		本文件描述了当一个 activity 从左滑出屏幕时，其位置信息。
+		
+	    android:duration="500" //滑入动作共花 500 毫秒
+	    android:fromXDelta="0" //
+	    android:fromYDelta="0" //既然是滑出，那么肯定滑出的是当前 activity，他的 x 坐标和 y 坐标肯定都是 0.
+	    android:toXDelta="-100%p" //向左边滑，自然是 -100%，刚好滑倒屏幕左边嘛！
+	    android:toYDelta="0" 
+ -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fromXDelta="0"
+    android:fromYDelta="0"
+    android:toXDelta="-100%p"
+    android:toYDelta="0" >
+
+</translate>

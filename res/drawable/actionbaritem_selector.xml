@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ac1_background" android:state_focused="true"></item>
+    <item android:drawable="@drawable/ac1_background" android:state_pressed="true"></item>
+    <item><shape>
+            <solid android:color="#22292C" />
+        </shape></item>
+
+</selector>

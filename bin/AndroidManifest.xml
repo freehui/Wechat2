@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wechat2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="com.freehui.wechat2.WechatApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.freehui.wechat2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.freehui.wechat2.ActivityRegsiter"
+            android:icon="@drawable/ac1"
+            android:label="填写手机号" />
+        <activity
+            android:name="com.freehui.wechat2.ActivityLogin"
+            android:label="使用手机号登录" />
+        <activity
+            android:name="com.freehui.wechat2.ActivityMain"
+            android:label="微信" />
+        <activity
+            android:name="com.freehui.wechat2.ActivityIMessage"
+            android:label="个人信息" />
+        <activity
+            android:name="com.freehui.wechat2.ActivitySetting"
+            android:label="设置" />
+        <activity android:name="com.freehui.wechat2.ActivityAddfriend" />
+        <activity android:name="com.freehui.wechat2.ActivityUser" />
+        <activity
+            android:name="com.freehui.wechat2.ActivityConfirmadd"
+            android:label="微信" />
+        <activity
+            android:name="com.freehui.wechat2.ActivityNewfriends"
+            android:label="新的朋友" />
+        <activity
+            android:name="com.freehui.wechat2.ActivityFriendMessage"
+            android:label="详细资料" />
+        <activity
+            android:name="com.freehui.wechat2.ActivityChat"
+            android:label="聊天" /> 
+        <activity
+            android:name="com.freehui.wechat2.ActivityAcceptRequest"
+            android:label="详细资料" />             
+        <activity
+            android:name="com.freehui.wechat2.windows.WaitingWindow"
+            android:theme="@style/transparent_background" />
+
+        <service android:name="com.freehui.wechat2.push.ServicePush" >
+        </service>
+    </application>
+
+</manifest>

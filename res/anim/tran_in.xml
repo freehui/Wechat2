@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+		本文件描述了当一个 activity 从右滑入屏幕时，其位置信息。
+		
+	    android:duration="500" //滑入动作共花 500 毫秒
+	    android:fromXDelta="100%p" //滑入的 activity 的滑入位置。100%就是屏幕的最右方，p是必须的。最右方，当然就是下一个 activity 的最左方了。
+	    android:fromYDelta="0" //activity 的 y 坐标，和 fromXDelta 类似。
+	    android:toXDelta="0" //滑倒哪？0表示屏幕最左方
+	    android:toYDelta="0" //滑倒哪？0表示屏幕最上方
+ -->
+
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fromXDelta="100%p"
+    android:fromYDelta="0"
+    android:toXDelta="0"
+    android:toYDelta="0" >
+
+</translate>
