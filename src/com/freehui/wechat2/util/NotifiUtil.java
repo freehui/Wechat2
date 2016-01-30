@@ -53,9 +53,9 @@ public class NotifiUtil {
     {  
     	
 		
-/*		if (isBackground() == false)
+		if (isBackground() == false)
 			//应用程序在前台，那就不弹了
-			return;*/
+			return;
     	
     	Context ctx = WechatApplication.getContext();
         
