@@ -185,13 +185,7 @@ public class WechatSocket extends Socket{
 		instance = null;
 		islogin = false;
 	}
-	
-	public void relogin(Context ctx){
-		
-		disconnected();
-		instance = new WechatSocket();
-		login(ctx);
-	}
+	 
 	
 	/*
 	 * 登陆
