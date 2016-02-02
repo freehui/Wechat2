@@ -107,9 +107,15 @@ public class ActivityRegsiter extends NoTieleActivity implements
 		protected void onProgressUpdate(Object... values) {
 			// TODO Auto-generated method stub
 			super.onProgressUpdate(values);
-
+				
+			int ret = (Integer) values[0];
+			
 			closewaitwindow();
-			new WechatAlert(ActivityRegsiter.this).setValue("该账户已注册。")
+			if (ret == 0)
+				new WechatAlert(ActivityRegsiter.this).setValue("无法连接到服务器。")
+					.setOnConfirm(null).show();
+			else 
+				new WechatAlert(ActivityRegsiter.this).setValue("该账户已注册。")
 					.setOnConfirm(null).show();
 		}
 	}
